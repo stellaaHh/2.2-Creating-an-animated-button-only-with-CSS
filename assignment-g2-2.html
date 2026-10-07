@@ -6,6 +6,7 @@
     <title>A test page</title>
     <!-- Note: In order to keep things simple for this assignment, I have used the 
     style element below. The convention is to have the CSS in a separate file. -->
+    <!-- AI help: I used Cursor to help debug my code and understand the concepts of hover and active. -->
     <style>
         .site-button {
             background-color: purple;
@@ -13,6 +14,18 @@
             font-size: 150%;
             margin: 1em;
             padding: 0.5em;
+        }
+
+        /* only the first button (rotating-button) should change on hover */
+        .rotating-button:hover {
+            background-color: white;
+            color: purple;
+            scale: 1.2;
+        }
+
+        /* when the first button is clicked, turn it upside down */
+        .rotating-button:active {
+            rotate: 180deg;
         }
     </style>
   </head>
